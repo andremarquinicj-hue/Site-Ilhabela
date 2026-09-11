@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062f38">
+  <meta name="description" content="Nossa próxima parada é Ilhabela, de 14 a 21 de novembro de 2026. Contagem regressiva, nossas memórias e sugestões da turma.">
+  <title>Ilhabela, lá vamos nós! · 14.11.2026</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23062f38'/%3E%3Ccircle cx='44' cy='20' r='8' fill='%23ddf581'/%3E%3Cpath d='M10 36q8-10 16 0t16 0t16 0M10 47q8-10 16 0t16 0t16 0' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="countdown.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="suggestions.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contagem">Pular para a contagem</a>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Ilhabela, início"><svg viewBox="0 0 42 34" fill="none" aria-hidden="true"><path d="M2 12c7-12 13 12 20 0S35 24 40 12M2 24c7-12 13 12 20 0s13 12 18 0" stroke="currentColor" stroke-width="2.5"/></svg><span>ilhabela<span class="brand-small">NOSSA PRÓXIMA PARADA</span></span></a>
+    <nav aria-label="Navegação principal"><a href="#contagem">A contagem</a><a href="#memorias">Memórias</a><a href="#destino">O destino</a><a href="#sugestoes">Sugestões da turma</a></nav>
+    <span class="header-date">14—21 NOV <span>2026</span></span>
+  </header>
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Praia_do_Curral%2C_Ilhabela_%282284333985%29.jpg" data-fallback="assets/memoria-06.webp" alt="Praia do Curral, em Ilhabela" width="1280" height="960" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="eyebrow hero-eyebrow"><span class="little-line"></span> ILHABELA, SP · 14 A 21 DE NOVEMBRO DE 2026</div>
+        <h1 id="hero-title">Ilhabela,<br><em>lá vamos nós.</em></h1>
+        <p class="hero-copy">O destino é lindo. A companhia é a melhor.<br>Agora só falta chegar o dia.</p>
+        <div class="countdown-wrap" id="contagem">
+          <div class="countdown-heading"><span id="countdown-label">NOSSO PRÓXIMO MERGULHO EM</span><span class="live-mark" aria-hidden="true">✦</span></div>
+          <div class="countdown" role="timer" aria-label="Tempo restante para a viagem" aria-live="off">
+            <div class="count-unit"><span class="count-number" id="days">--</span><span class="count-label">dias</span></div>
+            <span class="colon" aria-hidden="true">:</span>
+            <div class="count-unit"><span class="count-number" id="hours">--</span><span class="count-label">horas</span></div>
+            <span class="colon" aria-hidden="true">:</span>
+            <div class="count-unit"><span class="count-number" id="minutes">--</span><span class="count-label">minutos</span></div>
+            <span class="colon" aria-hidden="true">:</span>
+            <div class="count-unit"><span class="count-number seconds" id="seconds">--</span><span class="count-label">segundos</span></div>
+          </div>
+          <p class="countdown-note" id="countdown-note">Malas quase prontas. Coração já na ilha.</p>
+          <noscript><p>A viagem está marcada para 14/11/2026. Ative o JavaScript para ver a contagem ao vivo.</p></noscript>
+        </div>
+        <a href="#memorias" class="hero-link">Enquanto isso, bora matar a saudade <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-side" aria-hidden="true">MENOS ROTINA, MAIS MARESIA.</div>
+      <div class="hero-bottom"><span>UMA ILHA. MUITAS HISTÓRIAS.</span><span>23°46′ S &nbsp; 45°21′ O</span></div>
+    </section>
+
+    <div class="ribbon" aria-hidden="true"><div class="ribbon-track"><span>pé na areia</span><b>✳</b><span>gente querida</span><b>✳</b><span>sal na pele</span><b>✳</b><span>próxima parada: ilhabela</span><b>✳</b><span>pé na areia</span><b>✳</b><span>gente querida</span><b>✳</b><span>sal na pele</span><b>✳</b><span>próxima parada: ilhabela</span><b>✳</b></div></div>
+
+    <section class="memories section" id="memorias" aria-labelledby="memories-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">01 / JÁ DEU SAUDADE</p><h2 id="memories-title">A gente coleciona<br><em>dias assim.</em></h2></div><p class="section-copy">Sol, mar e risada solta.<br>Algumas lembranças para aquecer<br>a espera pela próxima viagem.</p></div>
+      <div class="photo-grid">
+        <button class="photo-card photo-main reveal" data-photo="2" aria-label="Ampliar foto da turma no mar"><span class="photo-frame"><img src="assets/memoria-03.webp" alt="A turma reunida para uma selfie no mar" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">A nossa melhor companhia <span>01</span></span></button>
+        <button class="photo-card reveal" data-photo="0" aria-label="Ampliar primeira foto do casal no mar"><span class="photo-frame"><img src="assets/memoria-01.webp" alt="Casal sorrindo nas águas claras" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Sol, sal e nós <span>02</span></span></button>
+        <button class="photo-card reveal" data-photo="1" aria-label="Ampliar segunda foto do casal no mar"><span class="photo-frame"><img src="assets/memoria-02.webp" alt="Casal de óculos de sol aproveitando o mar" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Leve como esse dia <span>03</span></span></button>
+        <button class="photo-card reveal" data-photo="3" aria-label="Ampliar foto do passeio de barco"><span class="photo-frame"><img src="assets/memoria-04.webp" alt="Amigos sorrindo durante um passeio de barco" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">O mar é logo ali <span>04</span></span></button>
+        <button class="photo-card reveal" data-photo="4" aria-label="Ampliar foto da turma na praia"><span class="photo-frame"><img src="assets/memoria-05.webp" alt="A turma descansando em cadeiras na praia" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Sem pressa de ir embora <span>05</span></span></button>
+        <button class="photo-card photo-wide reveal" data-photo="5" aria-label="Ampliar foto da turma na travessia"><span class="photo-frame"><img src="assets/memoria-06.webp" alt="Selfie dos quatro amigos na travessia de balsa, com o mar ao fundo" width="1600" height="1200" loading="lazy"></span><span class="photo-caption">O caminho também vira história <span>06</span></span></button>
+      </div>
+      <p class="gallery-footnote">Um clique na foto, uma viagem de volta.</p>
+    </section>
+
+    <section class="destination section" id="destino" aria-labelledby="destination-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">02 / É PRA LÁ QUE A GENTE VAI</p><h2 id="destination-title">Um pedacinho<br>de <em>paraíso.</em></h2></div><p class="section-copy">Entre o azul do mar e o verde da mata,<br>Ilhabela é o cenário da nossa<br>próxima história.</p></div>
+      <div class="places" id="places">
+        <figure class="place"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Castelhanos_-_Ilhabela_-_sp.jpg" alt="Vista da praia de Castelhanos em Ilhabela" width="4160" height="2103" loading="lazy" data-fallback="assets/memoria-03.webp"><figcaption><p class="place-tag">MAR E MATA</p><h3>Castelhanos</h3><p>Uma baía do lado leste da ilha, cercada pelo verde. Um convite para colocar os pés na areia.</p></figcaption></figure>
+        <figure class="place"><img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Praia_do_Curral%2C_Ilhabela_%282284333985%29.jpg" alt="Praia do Curral em Ilhabela" width="1280" height="960" loading="lazy" data-fallback="assets/memoria-05.webp"><figcaption><p class="place-tag">NO SUL DA ILHA</p><h3>Praia do Curral</h3><p>Uma das praias para entrar no clima de Ilhabela. Mar à frente e um dia inteiro para aproveitar.</p></figcaption></figure>
+        <figure class="place"><img src="assets/memoria-04.webp" alt="A turma aproveitando um passeio de barco" width="1200" height="1600" loading="lazy"><figcaption><p class="place-tag">DO NOSSO JEITO</p><h3>Pelo mar</h3><p>Se depender das nossas lembranças, um passeio de barco tem tudo para render mais histórias.</p></figcaption></figure>
+      </div>
+      <div class="destination-footer reveal"><span>ILHABELA · LITORAL NORTE DE SÃO PAULO</span><a href="https://www.ilhabela.sp.gov.br/portal/turismo" target="_blank" rel="noopener noreferrer">Conheça a ilha <span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="suggestions section" id="sugestoes" aria-labelledby="suggestions-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">03 / ESSE ROTEIRO É NOSSO</p><h2 id="suggestions-title">E aí, bora<br><em>conhecer onde?</em></h2></div><p class="section-copy">Aquela praia que você quer conhecer.<br>Um restaurante que parece bom demais.<br>Deixa a dica aqui pra turma!</p></div>
+      <div class="suggestions-layout">
+        <form id="suggestion-form" class="suggestion-form">
+          <h3>Sua dica vai pro roteiro?</h3><p>De 14 a 21 de novembro, a ilha é nossa.</p>
+          <label for="guest-name">Seu nome</label><input id="guest-name" name="name" autocomplete="given-name" placeholder="Como a turma te chama?" minlength="2" maxlength="60" required>
+          <fieldset><legend>O que você quer indicar?</legend><div class="category-choices"><label><input type="radio" name="category" value="praia" checked><span>☀ Praia</span></label><label><input type="radio" name="category" value="restaurante"><span>♧ Restaurante</span></label></div></fieldset>
+          <label for="place-name">Nome do lugar</label><input id="place-name" name="place" placeholder="Qual lugar não pode faltar?" minlength="2" maxlength="100" required>
+          <label for="suggested-day">Tem um dia em mente? <span>Opcional</span></label><select id="suggested-day" name="day"><option value="">A gente decide depois</option><option value="2026-11-14">14/11 · Sábado</option><option value="2026-11-15">15/11 · Domingo</option><option value="2026-11-16">16/11 · Segunda</option><option value="2026-11-17">17/11 · Terça</option><option value="2026-11-18">18/11 · Quarta</option><option value="2026-11-19">19/11 · Quinta</option><option value="2026-11-20">20/11 · Sexta</option><option value="2026-11-21">21/11 · Sábado</option></select>
+          <label for="place-url">Link do lugar <span>Opcional</span></label><input id="place-url" name="url" type="url" placeholder="https://maps.app.goo.gl/..." maxlength="1000">
+          <label for="place-note">Por que vale a visita? <span>Opcional</span></label><textarea id="place-note" name="note" rows="3" maxlength="500" placeholder="Conta o que te chamou a atenção..."></textarea>
+          <button class="submit-suggestion" type="submit">Mandar pra turma <span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-footnote">Seu nome e sua dica ficam visíveis para quem acessar o site.</p>
+        </form>
+        <div class="suggestion-board"><div class="board-header"><h3>As ideias da turma <span id="suggestion-count">0</span></h3><button id="refresh-suggestions" class="refresh-suggestions" type="button" aria-label="Atualizar sugestões">↻</button></div><div class="suggestion-filters" role="group" aria-label="Filtrar sugestões"><button type="button" data-filter="all" aria-pressed="true">Todas</button><button type="button" data-filter="praia" aria-pressed="false">Praias</button><button type="button" data-filter="restaurante" aria-pressed="false">Restaurantes</button></div><p id="board-status" class="board-status" role="status">Carregando as ideias da turma…</p><div id="suggestion-list" class="suggestion-list"></div></div>
+      </div>
+    </section>
+
+    <section class="closing reveal"><p class="eyebrow">TEM COISA BOA CHEGANDO</p><p>A próxima memória<br><em>já tem data.</em></p><span class="date-pill">14 a 21 de novembro de 2026</span><a href="#contagem">Voltar à contagem <span aria-hidden="true">↑</span></a></section>
+  </main>
+  <footer class="footer"><span>ilhabela <span class="footer-star" aria-hidden="true">✳</span> com a nossa turma.</span><details><summary>Referências e créditos</summary><div id="credits"><p>Praia do Curral (capa e destino): galio, <a href="https://commons.wikimedia.org/wiki/File:Praia_do_Curral,_Ilhabela_(2284333985).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>. Castelhanos: João Vitor Oliveira Martins, <a href="https://commons.wikimedia.org/wiki/File:Castelhanos_-_Ilhabela_-_sp.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Fotografias externas com enquadramento ajustado na tela; suas licenças continuam aplicáveis.</p><p>Referências: <a href="https://pt.wikipedia.org/wiki/Praia_de_Castelhanos" target="_blank" rel="noopener noreferrer">Castelhanos</a> e <a href="https://pt.wikipedia.org/wiki/Praia_do_Curral" target="_blank" rel="noopener noreferrer">Praia do Curral</a>.</p><p>Fotos da turma: acervo pessoal enviado para este site.</p><p><a href="https://www.ilhabela.sp.gov.br/portal/turismo" target="_blank" rel="noopener noreferrer">Portal de Turismo de Ilhabela</a></p></div></details><span>QUE CHEGUE LOGO ♡</span></footer>
+  <dialog class="lightbox" id="lightbox" aria-label="Galeria de memórias"><button class="close-lightbox" aria-label="Fechar foto">✕</button><button class="previous-photo" aria-label="Foto anterior">←</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="next-photo" aria-label="Próxima foto">→</button></dialog>
+</body>
+</html>

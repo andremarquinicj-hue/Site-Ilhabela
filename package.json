@@ -1,0 +1,8 @@
+{
+  "name": "ilhabela-nossa-viagem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contagem regressiva, memórias e mural da viagem a Ilhabela de 14 a 21/11/2026",
+  "engines": { "node": "22.x" },
+  "scripts": { "dev": "node --env-file-if-exists=.env.local scripts/dev.js", "start": "node --env-file-if-exists=.env.local scripts/dev.js" }
+}
