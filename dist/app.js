@@ -4,6 +4,10 @@ document.querySelectorAll('img[data-fallback]').forEach(image => {
     if (!image.dataset.fallback) return;
     const source = image.dataset.fallback; delete image.dataset.fallback;
     image.src = source; image.alt = 'Lembrança da turma em uma viagem à praia';
+    if (image.classList.contains('hero-image')) {
+      const label=document.querySelector('.hero-bottom>span:first-child');
+      if (label) label.textContent='MEMÓRIAS DA NOSSA TURMA';
+    }
     const caption = image.closest('figure')?.querySelector('figcaption');
     if (caption) { const note = document.createElement('span'); note.className='image-fallback-note'; note.textContent='Foto de lembrança da turma'; caption.appendChild(note); }
   }
@@ -45,43 +49,3 @@ if ('IntersectionObserver' in window && !prefersReducedMotion.matches) {
   }), {threshold:.08});
   document.querySelectorAll('.reveal').forEach(element => { element.classList.add('will-reveal'); observer.observe(element); });
 }
-
-const memories = [
-  ['memoria-01.webp','Casal sorrindo nas águas claras','Sol, sal e nós'],
-  ['memoria-02.webp','Casal de óculos de sol aproveitando o mar','Leve como esse dia'],
-  ['memoria-03.webp','A turma reunida para uma selfie no mar','A nossa melhor companhia'],
-  ['memoria-04.webp','Amigos sorrindo durante um passeio de barco','O mar é logo ali'],
-  ['memoria-05.webp','A turma descansando em cadeiras na praia','Sem pressa de ir embora'],
-  ['memoria-06.webp','Selfie da turma durante a travessia de balsa','O caminho também vira história']
-];
-const photoOrder = [2,0,1,3,4,5];
-const lightbox = document.getElementById('lightbox');
-let currentPhoto = 0;
-function showPhoto(index) {
-  currentPhoto = (index + photoOrder.length) % photoOrder.length;
-  const [file, alt, caption] = memories[photoOrder[currentPhoto]];
-  const image = document.getElementById('lightbox-image');
-  image.src = `assets/${file}`; image.alt = alt;
-  document.getElementById('lightbox-caption').textContent = `${caption} · ${currentPhoto + 1} / ${memories.length}`;
-}
-document.querySelectorAll('[data-photo]').forEach(button => button.addEventListener('click', () => {
-  showPhoto(photoOrder.indexOf(Number(button.dataset.photo)));
-  lightbox.showModal(); document.body.classList.add('modal-open');
-}));
-document.querySelector('.close-lightbox').addEventListener('click', () => lightbox.close());
-document.querySelector('.previous-photo').addEventListener('click', () => showPhoto(currentPhoto-1));
-document.querySelector('.next-photo').addEventListener('click', () => showPhoto(currentPhoto+1));
-lightbox.addEventListener('close', () => document.body.classList.remove('modal-open'));
-lightbox.addEventListener('click', event => { if (event.target === lightbox) lightbox.close(); });
-lightbox.addEventListener('keydown', event => {
-  if (event.key === 'ArrowRight') { event.preventDefault(); showPhoto(currentPhoto+1); }
-  if (event.key === 'ArrowLeft') { event.preventDefault(); showPhoto(currentPhoto-1); }
-});
-let touchX = null;
-lightbox.addEventListener('touchstart', event => { touchX = event.changedTouches[0].screenX; }, {passive:true});
-lightbox.addEventListener('touchend', event => {
-  if (touchX === null) return;
-  const delta = event.changedTouches[0].screenX - touchX;
-  if (Math.abs(delta) > 60) showPhoto(currentPhoto + (delta < 0 ? 1 : -1));
-  touchX = null;
-}, {passive:true});

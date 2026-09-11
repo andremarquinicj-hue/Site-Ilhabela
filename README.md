@@ -1,3 +1,21 @@
+# Atualização completa — galeria corrigida e nova capa
+
+Este pacote contém o projeto completo, com a foto enviada incluída em `dist/assets/capa-castelhanos.jpg`.
+
+## Atualizar o site existente
+
+1. Extraia o ZIP.
+2. Na raiz do repositório Site-Ilhabela, clique em Add file → Upload files.
+3. Envie todas as pastas e arquivos extraídos, mantendo `api`, `dist`, `lib`, `scripts`, `package.json` e `vercel.json` na raiz. Não envie a pasta externa que contém o projeto.
+4. Confirme em Commit changes na branch main e aguarde a Vercel mostrar Ready.
+5. Abra o site e use Ctrl + F5 para atualizar o cache.
+
+A configuração existente do Firebase na Vercel continua válida. Não é necessário gerar outra chave ou substituir as regras do seu banco. As sugestões permanecem no Firestore.
+
+A galeria agora possui largura própria, sem herdar as margens das outras seções em telas grandes. A capa é um arquivo local incluído no projeto. O realce das fotos pessoais é aplicado pelo navegador, preservando os arquivos originais. Sintaxe, referências locais e estrutura foram conferidas; não foi executado teste visual em navegador.
+
+---
+
 # Ilhabela, lá vamos nós!
 
 Site da viagem de **14 a 21 de novembro de 2026**. O pacote contém o site completo e as seis fotos da turma.
@@ -96,7 +114,7 @@ O contador usa dias completos, horas, minutos e segundos restantes. Por exemplo,
 
 As seis fotografias pessoais estão incluídas no pacote, em WebP, com proporções preservadas. As imagens de praias são carregadas de fontes externas; se uma fonte estiver indisponível, o site usa uma foto da turma e identifica a substituição nos cartões de destinos.
 
-- Praia do Curral: **galio**, [arquivo original e autoria](https://commons.wikimedia.org/wiki/File:Praia_do_Curral,_Ilhabela_(2284333985).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+- Praia do Curral (cartão de destino): **galio**, [arquivo original e autoria](https://commons.wikimedia.org/wiki/File:Praia_do_Curral,_Ilhabela_(2284333985).jpg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 - Castelhanos: **João Vitor Oliveira Martins**, [arquivo original e autoria](https://commons.wikimedia.org/wiki/File:Castelhanos_-_Ilhabela_-_sp.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 - As fotos externas têm o enquadramento ajustado por CSS; as licenças indicadas continuam aplicáveis às imagens e a eventuais adaptações. Elas não alteram os direitos das fotos pessoais.
 - [Portal municipal de turismo](https://www.ilhabela.sp.gov.br/portal/turismo), [Castelhanos](https://pt.wikipedia.org/wiki/Praia_de_Castelhanos), [Praia do Curral](https://pt.wikipedia.org/wiki/Praia_do_Curral).
