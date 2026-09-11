@@ -7,9 +7,11 @@
   <meta name="description" content="Nossa próxima parada é Ilhabela, de 14 a 21 de novembro de 2026. Contagem regressiva, nossas memórias e sugestões da turma.">
   <title>Ilhabela, lá vamos nós! · 14.11.2026</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23062f38'/%3E%3Ccircle cx='44' cy='20' r='8' fill='%23ddf581'/%3E%3Cpath d='M10 36q8-10 16 0t16 0t16 0M10 47q8-10 16 0t16 0t16 0' fill='none' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="gallery.css?v=2">
   <script defer src="countdown.js"></script>
-  <script defer src="app.js"></script>
+  <script defer src="app.js?v=2"></script>
+  <script defer src="gallery.js?v=2"></script>
   <script defer src="suggestions.js"></script>
 </head>
 <body>
@@ -21,7 +23,7 @@
   </header>
   <main>
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <img class="hero-image" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Praia_do_Curral%2C_Ilhabela_%282284333985%29.jpg" data-fallback="assets/memoria-06.webp" alt="Praia do Curral, em Ilhabela" width="1280" height="960" fetchpriority="high">
+      <img class="hero-image" src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Castelhanos_-_Ilhabela_-_sp.jpg" data-fallback="assets/memoria-06.webp" alt="Vista panorâmica da Praia de Castelhanos, cercada pela Mata Atlântica em Ilhabela" width="4160" height="2103" fetchpriority="high">
       <div class="hero-shade"></div>
       <div class="hero-content">
         <div class="eyebrow hero-eyebrow"><span class="little-line"></span> ILHABELA, SP · 14 A 21 DE NOVEMBRO DE 2026</div>
@@ -44,22 +46,26 @@
         <a href="#memorias" class="hero-link">Enquanto isso, bora matar a saudade <span aria-hidden="true">↘</span></a>
       </div>
       <div class="hero-side" aria-hidden="true">MENOS ROTINA, MAIS MARESIA.</div>
-      <div class="hero-bottom"><span>UMA ILHA. MUITAS HISTÓRIAS.</span><span>23°46′ S &nbsp; 45°21′ O</span></div>
+      <div class="hero-bottom"><span>PRAIA DE CASTELHANOS · ILHABELA</span><span>23°46′ S &nbsp; 45°21′ O</span></div>
     </section>
 
     <div class="ribbon" aria-hidden="true"><div class="ribbon-track"><span>pé na areia</span><b>✳</b><span>gente querida</span><b>✳</b><span>sal na pele</span><b>✳</b><span>próxima parada: ilhabela</span><b>✳</b><span>pé na areia</span><b>✳</b><span>gente querida</span><b>✳</b><span>sal na pele</span><b>✳</b><span>próxima parada: ilhabela</span><b>✳</b></div></div>
 
     <section class="memories section" id="memorias" aria-labelledby="memories-title">
-      <div class="section-heading reveal"><div><p class="eyebrow">01 / JÁ DEU SAUDADE</p><h2 id="memories-title">A gente coleciona<br><em>dias assim.</em></h2></div><p class="section-copy">Sol, mar e risada solta.<br>Algumas lembranças para aquecer<br>a espera pela próxima viagem.</p></div>
-      <div class="photo-grid">
-        <button class="photo-card photo-main reveal" data-photo="2" aria-label="Ampliar foto da turma no mar"><span class="photo-frame"><img src="assets/memoria-03.webp" alt="A turma reunida para uma selfie no mar" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">A nossa melhor companhia <span>01</span></span></button>
-        <button class="photo-card reveal" data-photo="0" aria-label="Ampliar primeira foto do casal no mar"><span class="photo-frame"><img src="assets/memoria-01.webp" alt="Casal sorrindo nas águas claras" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Sol, sal e nós <span>02</span></span></button>
-        <button class="photo-card reveal" data-photo="1" aria-label="Ampliar segunda foto do casal no mar"><span class="photo-frame"><img src="assets/memoria-02.webp" alt="Casal de óculos de sol aproveitando o mar" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Leve como esse dia <span>03</span></span></button>
-        <button class="photo-card reveal" data-photo="3" aria-label="Ampliar foto do passeio de barco"><span class="photo-frame"><img src="assets/memoria-04.webp" alt="Amigos sorrindo durante um passeio de barco" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">O mar é logo ali <span>04</span></span></button>
-        <button class="photo-card reveal" data-photo="4" aria-label="Ampliar foto da turma na praia"><span class="photo-frame"><img src="assets/memoria-05.webp" alt="A turma descansando em cadeiras na praia" width="1200" height="1600" loading="lazy"></span><span class="photo-caption">Sem pressa de ir embora <span>05</span></span></button>
-        <button class="photo-card photo-wide reveal" data-photo="5" aria-label="Ampliar foto da turma na travessia"><span class="photo-frame"><img src="assets/memoria-06.webp" alt="Selfie dos quatro amigos na travessia de balsa, com o mar ao fundo" width="1600" height="1200" loading="lazy"></span><span class="photo-caption">O caminho também vira história <span>06</span></span></button>
+      <div class="album-profile">
+        <div class="album-avatar"><img src="assets/memoria-03.webp" alt="" width="1200" height="1600" loading="lazy"></div>
+        <div class="album-profile-copy"><p class="eyebrow">01 / NOSSO ÁLBUM</p><h2 id="memories-title">Nossa turma.<br><em>Nossas memórias.</em></h2><p>Sol, mar e a melhor companhia. Que venham os próximos capítulos.</p><div class="album-stats"><span><strong>6</strong> memórias</span><span><strong>14—21 NOV</strong> próxima viagem</span></div></div>
       </div>
-      <p class="gallery-footnote">Um clique na foto, uma viagem de volta.</p>
+      <div class="album-toolbar"><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" stroke="currentColor" stroke-width="1.5"/></svg> MEMÓRIAS</span><span>Toque para abrir</span></div>
+      <div class="album-grid">
+        <button type="button" class="album-tile" data-photo="2" aria-label="Abrir foto: A nossa melhor companhia"><span class="album-photo"><img src="assets/memoria-03.webp" alt="A turma reunida para uma selfie no mar" width="1200" height="1600" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">A nossa melhor companhia</span></button>
+        <button type="button" class="album-tile" data-photo="0" aria-label="Abrir foto: Sol, sal e nós"><span class="album-photo"><img src="assets/memoria-01.webp" alt="Casal sorrindo nas águas claras" width="1200" height="1600" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">Sol, sal e nós</span></button>
+        <button type="button" class="album-tile" data-photo="1" aria-label="Abrir foto: Leve como esse dia"><span class="album-photo"><img src="assets/memoria-02.webp" alt="Casal de óculos de sol aproveitando o mar" width="1200" height="1600" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">Leve como esse dia</span></button>
+        <button type="button" class="album-tile" data-photo="3" aria-label="Abrir foto: O mar é logo ali"><span class="album-photo"><img src="assets/memoria-04.webp" alt="Amigos sorrindo durante um passeio de barco" width="1200" height="1600" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">O mar é logo ali</span></button>
+        <button type="button" class="album-tile" data-photo="4" aria-label="Abrir foto: Sem pressa de ir embora"><span class="album-photo"><img src="assets/memoria-05.webp" alt="A turma descansando em cadeiras na praia" width="1200" height="1600" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">Sem pressa de ir embora</span></button>
+        <button type="button" class="album-tile" data-photo="5" aria-label="Abrir foto: O caminho também vira história"><span class="album-photo"><img src="assets/memoria-06.webp" alt="Selfie da turma durante a travessia de balsa" width="1600" height="1200" loading="lazy"><span class="album-expand" aria-hidden="true">⤢</span></span><span class="album-caption">O caminho também vira história</span></button>
+      </div>
+      <p class="album-footnote">Tem lembrança que dá vontade de viver de novo.</p>
     </section>
 
     <section class="destination section" id="destino" aria-labelledby="destination-title">
@@ -93,7 +99,13 @@
 
     <section class="closing reveal"><p class="eyebrow">TEM COISA BOA CHEGANDO</p><p>A próxima memória<br><em>já tem data.</em></p><span class="date-pill">14 a 21 de novembro de 2026</span><a href="#contagem">Voltar à contagem <span aria-hidden="true">↑</span></a></section>
   </main>
-  <footer class="footer"><span>ilhabela <span class="footer-star" aria-hidden="true">✳</span> com a nossa turma.</span><details><summary>Referências e créditos</summary><div id="credits"><p>Praia do Curral (capa e destino): galio, <a href="https://commons.wikimedia.org/wiki/File:Praia_do_Curral,_Ilhabela_(2284333985).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>. Castelhanos: João Vitor Oliveira Martins, <a href="https://commons.wikimedia.org/wiki/File:Castelhanos_-_Ilhabela_-_sp.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Fotografias externas com enquadramento ajustado na tela; suas licenças continuam aplicáveis.</p><p>Referências: <a href="https://pt.wikipedia.org/wiki/Praia_de_Castelhanos" target="_blank" rel="noopener noreferrer">Castelhanos</a> e <a href="https://pt.wikipedia.org/wiki/Praia_do_Curral" target="_blank" rel="noopener noreferrer">Praia do Curral</a>.</p><p>Fotos da turma: acervo pessoal enviado para este site.</p><p><a href="https://www.ilhabela.sp.gov.br/portal/turismo" target="_blank" rel="noopener noreferrer">Portal de Turismo de Ilhabela</a></p></div></details><span>QUE CHEGUE LOGO ♡</span></footer>
-  <dialog class="lightbox" id="lightbox" aria-label="Galeria de memórias"><button class="close-lightbox" aria-label="Fechar foto">✕</button><button class="previous-photo" aria-label="Foto anterior">←</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="next-photo" aria-label="Próxima foto">→</button></dialog>
+  <footer class="footer"><span>ilhabela <span class="footer-star" aria-hidden="true">✳</span> com a nossa turma.</span><details><summary>Referências e créditos</summary><div id="credits"><p>Praia do Curral (destino): galio, <a href="https://commons.wikimedia.org/wiki/File:Praia_do_Curral,_Ilhabela_(2284333985).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 2.0</a>. Castelhanos (capa e destino): João Vitor Oliveira Martins, <a href="https://commons.wikimedia.org/wiki/File:Castelhanos_-_Ilhabela_-_sp.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Fotografias externas com enquadramento ajustado na tela; suas licenças continuam aplicáveis.</p><p>Referências: <a href="https://pt.wikipedia.org/wiki/Praia_de_Castelhanos" target="_blank" rel="noopener noreferrer">Castelhanos</a> e <a href="https://pt.wikipedia.org/wiki/Praia_do_Curral" target="_blank" rel="noopener noreferrer">Praia do Curral</a>.</p><p>Fotos da turma: acervo pessoal enviado para este site.</p><p><a href="https://www.ilhabela.sp.gov.br/portal/turismo" target="_blank" rel="noopener noreferrer">Portal de Turismo de Ilhabela</a></p></div></details><span>QUE CHEGUE LOGO ♡</span></footer>
+  <dialog class="photo-viewer" id="lightbox" aria-labelledby="viewer-title">
+    <button class="viewer-close" type="button" aria-label="Fechar foto">✕</button>
+    <div class="viewer-post">
+      <div class="viewer-media"><img id="lightbox-image" alt=""><button class="viewer-prev" type="button" aria-label="Foto anterior">‹</button><button class="viewer-next" type="button" aria-label="Próxima foto">›</button></div>
+      <div class="viewer-details"><div class="viewer-author"><img src="assets/memoria-03.webp" alt="" width="1200" height="1600"><div><strong>Nossa turma</strong><span>Nosso álbum de viagem</span></div></div><div class="viewer-story"><p class="eyebrow">DIAS QUE FICAM</p><h3 id="viewer-title"></h3><p id="viewer-description"></p></div><div class="viewer-bottom"><p id="lightbox-caption" aria-live="polite"></p><div class="viewer-thumbnails" role="group" aria-label="Escolher foto"></div><span class="viewer-hint">Use as setas ou deslize a foto</span></div></div>
+    </div>
+  </dialog>
 </body>
 </html>
